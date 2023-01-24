@@ -52,7 +52,7 @@
 
     <nav class="navbar navbar-dark" style="background-color: black;" aria-label="Barra Atigua">
         <div class="container-fluid">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1 {{request()->routeIS('CInicio')}}">
+            <a href="/Anonimo" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1 {{request()->routeIS('CInicio')}}">
                 <svg class="bi" width="35" height="30"><use xlink:href="#house"/></svg>
             </a>
             <p class="text-light display-6 mb-3 mb-md-0" style="font-size: 30px "><b>System Of Time</b></p>
@@ -63,7 +63,7 @@
             <div class="collapse navbar-collapse" id="navbarsExample01">
                 <ul class="navbar-nav me-auto mb-2">
                     <li class="nav-item">
-                        <a class="nav-link {{request()->routeIS('CInicio')}}" href="/">Example 1</a>
+                        <a class="nav-link {{request()->routeIS('CInicio')}}" href="/Anonimo">Example 1</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{request()->routeIS('CEjemplo')}}" href="/Ejem/Anonimo/0">Example 2</a>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Example_1;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('Example1');
 })->name('CInicio');
+*/
+
+Route::get('/{Nombre}', Example_1::class)->name('CInicio');
 
 Route::get('/Ejem/{id?}/{id2?}', function (string $id, string $id2){
     $Ejem = "Hay ".$id2." cargas horarias por revisar ".$id;
